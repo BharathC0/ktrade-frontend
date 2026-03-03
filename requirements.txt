@@ -32,8 +32,8 @@ immutabledict==4.2.2
 importlib_resources==6.5.2
 iniconfig==2.3.0
 isort==7.0.0
-jax==0.6.2
-jaxlib==0.6.2
+jax==0.4.25
+jaxlib==0.4.25
 Jinja2==3.1.6
 joblib==1.5.3
 kagglehub==0.4.2
