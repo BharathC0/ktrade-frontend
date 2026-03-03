@@ -101,7 +101,7 @@ export default function Home() {
     const orderData = { pair: activePair, type: orderType, side: side, price: 64230.00, amount: 0.15 };
 
     try {
-      await fetch("http://127.0.0.1:8000/api/order", {
+      await fetch("https://ktrade-backend-3.onrender.com/api/order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData),
