@@ -66,8 +66,8 @@ export default function Home() {
         setWalletBalance(parseFloat(formattedBalance).toFixed(4));
 
         const network = await provider.getNetwork();
-        if (network.chainId === 56n) setNetworkSymbol("BNB");
-        else if (network.chainId === 137n) setNetworkSymbol("MATIC");
+        if (network.chainId === BigInt(56)) setNetworkSymbol("BNB");
+        else if (network.chainId === BigInt(137)) setNetworkSymbol("MATIC");
         else setNetworkSymbol("ETH");
 
         toast.success(`Wallet Connected!`, {
